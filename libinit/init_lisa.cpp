@@ -110,6 +110,10 @@ void vendor_load_properties() {
         set_device_props(
             "Xiaomi", "lisa", "2109119DI", "lisa_in", "Xiaomi 11 Lite NE");
         property_override("ro.product.mod_device", "lisa_in_global");
+    } else if (region == "CN") {
+        set_device_props(
+            "Xiaomi", "lisa", "2107119DC", "lisa", "Mi 11 LE");
+        property_override("ro.product.mod_device", "lisa_cn");
     } else {
         set_device_props(
             "Xiaomi", "lisa", "2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE");
