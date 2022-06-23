@@ -91,9 +91,9 @@ TARGET_PREBUILT_KERNEL := $(LISA_PREBUILT)/kernel/Image
 TARGET_PREBUILT_DTB := $(LISA_PREBUILT)/kernel/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(LISA_PREBUILT)/kernel/dtbo.img
 
-TARGET_KERNEL_CONFIG := vendor/lahaina_GKI
+TARGET_KERNEL_CONFIG := vendor/lisa-qgki_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
+TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true

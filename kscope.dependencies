@@ -7,9 +7,9 @@
   },
   {
     "remote": "github",
-    "repository": "Demon000/kernel_xiaomi_sm8350",
-    "target_path": "kernel/xiaomi/sm8350",
-    "branch": "lineage-18.1"
+    "repository": "ALKALiKong-ROMProject/kernel_xiaomi_lisa",
+    "target_path": "kernel/xiaomi/lisa",
+    "branch": "sunflowerleaf"
   },
   {
     "remote": "github",
