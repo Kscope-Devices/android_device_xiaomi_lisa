@@ -60,8 +60,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -76,7 +75,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V2
+    Snap
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -139,17 +138,13 @@ PRODUCT_PACKAGES += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayLisa \
+    DialerOverlayLisa \
     FrameworkResOverlayLisa \
     SettingsOverlayLisa \
     SettingsProviderOverlayLisa \
     SystemUIOverlayLisa \
     TelephonyOverlayLisa \
     WifiResOverlayLisa
-
-ifneq ($(ARROW_GAPPS), true)
-PRODUCT_PACKAGES += \
-    DialerOverlayLisa
-endif
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \

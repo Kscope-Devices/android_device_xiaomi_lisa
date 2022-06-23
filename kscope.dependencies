@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "gitlab",
+    "repository": "ALKALiKong/device_xiaomi_lisa-prebuilt",
+    "target_path": "device/xiaomi/lisa-prebuilt",
+    "branch": "sunflowerleaf"
+  },
+  {
+    "remote": "github",
+    "repository": "Demon000/kernel_xiaomi_sm8350",
+    "target_path": "kernel/xiaomi/sm8350",
+    "branch": "lineage-18.1"
+  },
+  {
+    "remote": "github",
+    "repository": "ALKALiKong-ROMProject/vendor_xiaomi_lisa",
+    "target_path": "vendor/xiaomi/lisa",
+    "branch": "sunflowerleaf"
+  }
+]
