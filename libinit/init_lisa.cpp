@@ -103,24 +103,30 @@ void set_device_props(const std::string brand, const std::string device, const s
     }
 }
 
+void load_miuicamera_properties() {
+    property_override("ro.product.mod_device", "lisa_global");
+    property_override("vendor.camera.aux.packagelist", "com.android.camera");
+    property_override("persist.vendor.camera.privapp.list", "com.android.camera");
+    property_override("ro.com.google.lens.oem_camera_package", "com.android.camera");
+    property_override("ro.miui.notch", "1");
+}
+
 void vendor_load_properties() {
     string region = android::base::GetProperty("ro.boot.hwc", "");
 
     if (region == "IN") {
         set_device_props(
             "Xiaomi", "lisa", "2109119DI", "lisa_in", "Xiaomi 11 Lite NE");
-        property_override("ro.product.mod_device", "lisa_in_global");
     } else if (region == "CN") {
         set_device_props(
             "Xiaomi", "lisa", "2107119DC", "lisa", "Mi 11 LE");
-        property_override("ro.product.mod_device", "lisa_cn");
     } else {
         set_device_props(
             "Xiaomi", "lisa", "2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE");
-        property_override("ro.product.mod_device", "lisa_global");
     }
 
     load_dalvik_properties();
+    load_miuicamera_properties();
 
 //  SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
