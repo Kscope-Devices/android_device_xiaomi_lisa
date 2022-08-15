@@ -83,8 +83,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc \
     init.recovery.qcom.sh \
-    init.lisa.rc \
-    init.qcom.rc
+    init.lisa.rc
 
 # Device Settings
 PRODUCT_PACKAGES += \
