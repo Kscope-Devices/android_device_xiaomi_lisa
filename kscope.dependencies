@@ -6,14 +6,12 @@
     "branch": "sunflowerleaf"
   },
   {
-    "remote": "github",
-    "repository": "ALKALiKong-ROMProject/kernel_xiaomi_lisa",
-    "target_path": "kernel/xiaomi/lisa",
-    "branch": "sunflowerleaf"
+    "repository"   : "android_kernel_xiaomi_thyme",
+    "target_path"  : "kernel/xiaomi/lisa"
   },
   {
-    "remote": "github",
-    "repository": "ALKALiKong-ROMProject/vendor_xiaomi_lisa",
+    "remote": "gitlab",
+    "repository": "ALKALiKong/vendor_xiaomi_lisa",
     "target_path": "vendor/xiaomi/lisa",
     "branch": "sunflowerleaf"
   }
